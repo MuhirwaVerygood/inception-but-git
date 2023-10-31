@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from random import randint
 
 # Start 3 years ago
-start_date = datetime.now() - timedelta(days=365 * 3)
+start_date = datetime.now() - timedelta(days=365 * 2)
 now = datetime.now()
 
 for i in range(1000):  # Number of commits
