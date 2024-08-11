@@ -21,7 +21,7 @@ for i in range(1000):  # Number of commits
         f.write(f"Commit {i+1} on {commit_date_str}\n")
 
     os.system("git add .")
-    os.system(f'GIT_COMMITTER_DATE="{commit_date_str}" git commit --date="{commit_date_str}" -m "Initial commit {i+1}"')
+    os.system(f'GIT_COMMITTER_DATE="{commit_date_str}" git commit --date="{commit_date_str}" -m "Initial commit"')
     os.system("git push origin main")
     time.sleep(2)  # Avoid rate limiting
 
